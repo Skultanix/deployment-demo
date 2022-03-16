@@ -1,7 +1,7 @@
 img {
 border-radius: 24%;
-width: 500 px;
-height: 576 px;
+max-width: 500 px;
+max-height: 576 px;
 }
 
 h1 {
