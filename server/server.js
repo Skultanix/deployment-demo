@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, "../public")))
 // app.get("/styles", function(req, res){
 //     res.sendFile(path.join(__dirname,"../public/index.css"))
 // })
-// const port = process.env.PORT || 4200
+const port = process.env.PORT || 4200
 
-// app.listen(port, () => {
-//     console.log(`Port ${port} locked and loaded.`)
-// })
+app.listen(port, () => {
+    console.log(`Port ${port} locked and loaded.`)
+})
