@@ -7,22 +7,22 @@ app.use(cors())
 app.use(express.json())
 
 //middleware
-
+app.use(express.static(path.join(__dirname, "../public")))
 
 // endpoints
-app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname, "../public"))
-})
+// app.get("/", function(req,res){
+//     res.sendFile(path.join(__dirname, "../public"))
+// })
 
-app.get("/",function(req, res){
-    res.sendFile(path.join(__dirname,"../public/index.html"))
-})
+// app.get("/",function(req, res){
+//     res.sendFile(path.join(__dirname,"../public/index.html"))
+// })
 
-app.get("/styles", function(req, res){
-    res.sendFile(path.join(__dirname,"../public/index.css"))
-})
-const port = process.env.PORT || 4200
+// app.get("/styles", function(req, res){
+//     res.sendFile(path.join(__dirname,"../public/index.css"))
+// })
+// const port = process.env.PORT || 4200
 
-app.listen(port, () => {
-    console.log(`Port ${port} locked and loaded.`)
-})
+// app.listen(port, () => {
+//     console.log(`Port ${port} locked and loaded.`)
+// })
